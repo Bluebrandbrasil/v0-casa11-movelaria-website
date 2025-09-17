@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.casa11movelaria.com.br/</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.casa11movelaria.com.br/banner-hero-1.webp</image:loc>
+      <image:title>Casa11 Movelaria - Móveis Planejados</image:title>
+      <image:caption>Especialistas em móveis planejados em Santo André</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.casa11movelaria.com.br/contatos</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.casa11movelaria.com.br/blog</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Blog posts -->
+  <url>
+    <loc>https://www.casa11movelaria.com.br/blog/tendencias-cozinhas-2024</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.casa11movelaria.com.br/blog/como-escolher-cores-moveis</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.casa11movelaria.com.br/blog/organizacao-closet-dicas</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.casa11movelaria.com.br/blog/home-office-produtivo</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.casa11movelaria.com.br/blog/moveis-pequenos-espacos</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.casa11movelaria.com.br/blog/cuidados-moveis-planejados</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

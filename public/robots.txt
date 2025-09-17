@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.casa11movelaria.com.br/sitemap.xml
+
+# Disallow admin areas (if any in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow all search engines to crawl the site
+# Casa11 Movelaria - Móveis Planejados em Santo André
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
