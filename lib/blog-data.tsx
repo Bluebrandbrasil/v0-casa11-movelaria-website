@@ -14,6 +14,44 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 4,
+    slug: "mais-que-paredes-memorias-e-pessoas",
+    title: "Mais que Paredes: Memórias e Pessoas",
+    excerpt:
+      "Descubra como os ambientes planejados ganham vida quando pensados para acolher quem amamos. Uma reflexão sobre o verdadeiro significado de lar.",
+    content: `
+      <h2>O Valor das Pessoas nos Espaços que Habitamos</h2>
+      
+      <p>"A felicidade só é real quando compartilhada." A frase é do explorador Christopher McCandless, que descobriu, em meio à solidão do Alasca, que o sentido da vida está nas pessoas que nos cercam. Mas não precisamos esperar por momentos extremos para perceber isso: o valor dos amigos e da família pode — e deve — ser celebrado todos os dias, dentro do nosso lar.</p>
+      
+      <h3>Uma Casa Não é Apenas um Espaço Físico</h3>
+      
+      <p>Abrir a porta e encontrar a casa do jeito que sonhamos é uma sensação única. Mas, por mais confortável e bonita que seja, uma casa vazia não é capaz de preencher todas as nossas necessidades. O que dá vida aos ambientes são as pessoas que os ocupam.</p>
+      
+      <h3>Projetos que Acolhem</h3>
+      
+      <p>Projetos de interiores pensados para receber e acolher tornam cada espaço ainda mais especial. Uma cozinha prática para o dia a dia pode se transformar em palco de celebrações entre amigos. Um living aconchegante a dois pode virar o cenário perfeito para uma noite de cinema em família. Quando os ambientes são desenhados para serem vividos, eles ganham uma camada extra de personalidade, que vai além das cores e formas.</p>
+      
+      <h3>Memórias que Ficam</h3>
+      
+      <p>No fim das contas, uma casa sozinha não conta história. São as pessoas que nela habitam que criam memórias duradouras, tendo os espaços como pano de fundo desses momentos.</p>
+      
+      <p>Da porta para dentro, nos permitimos viver intensamente: brindar com amigos, abraçar quem amamos, brincar com nossos filhos. Cada etapa da vida ganha mais cor quando acontece em lugares que refletem quem somos.</p>
+      
+      <h3>Conclusão</h3>
+      
+      <p>Mais do que o "quê", é o "quem" que nos faz sentir verdadeiramente em casa.</p>
+      
+      <p>Na Casa11, acreditamos que móveis planejados são mais do que peças funcionais — são estruturas que sustentam momentos, encontros e afetos. Por isso, cada projeto é pensado para acolher não apenas objetos, mas pessoas e suas histórias.</p>
+    `,
+    image: "/blog-post-4.jpg",
+    author: "Bruna - Arquiteta",
+    authorImage: "/bruna-arquiteta.png",
+    date: "4 de Fevereiro, 2026",
+    category: "Lifestyle",
+    readTime: "3 min",
+  },
+  {
     id: 1,
     slug: "dormitorio-de-luxo-ambiente-sofisticado",
     title: "Dormitório de Luxo: Como Criar um Ambiente Sofisticado",

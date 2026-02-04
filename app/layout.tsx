@@ -1,7 +1,22 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { Work_Sans, Open_Sans } from "next/font/google"
 import "./globals.css"
 import ClientLayout from "./ClientLayout"
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+  display: "swap",
+  preload: true,
+})
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open-sans",
+  display: "swap",
+  preload: true,
+})
 
 const jsonLdScript = {
   "@context": "https://schema.org",
@@ -119,7 +134,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body>
+      <body className={`font-sans ${workSans.variable} ${openSans.variable} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
