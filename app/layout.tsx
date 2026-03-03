@@ -1,9 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Work_Sans, Open_Sans } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import ClientLayout from "./ClientLayout"
-import { JsonLd } from "@/components/json-ld"
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -136,7 +136,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`font-sans ${workSans.variable} ${openSans.variable} antialiased`}>
-        <JsonLd data={jsonLdScript} />
+        <Script
+          id="json-ld"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {JSON.stringify(jsonLdScript)}
+        </Script>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
