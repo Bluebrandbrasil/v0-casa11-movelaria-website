@@ -14,6 +14,50 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 5,
+    slug: "projeto-cores-moveis-planejados-cozinha-apartamento",
+    title: "O Papel das Cores e a Importância de um Projeto de Móveis Planejados Bem Elaborado",
+    excerpt:
+      "Saiba como a escolha das cores e um projeto de móveis planejados impactam sua vida. Dicas para cozinha planejada para apartamento em São Bernardo e todo o ABC.",
+    content: `
+      <h2>Harmonia entre Design Técnico e Psicologia das Cores</h2>
+      
+      <p>Ao buscar por móveis planejados ou móveis sob medida, muitos consumidores focam apenas na estética imediata. No entanto, o verdadeiro sucesso de um ambiente está na harmonia entre o design técnico e a psicologia das cores. Um projeto mal elaborado pode transformar o sonho da casa nova em uma grande dor de cabeça, impactando diretamente no seu bem-estar e produtividade.</p>
+      
+      <h3>A Diferença entre Móveis Sob Medida e um Projeto Estratégico</h3>
+      
+      <p>Não basta apenas preencher espaços. Seja para uma cozinha planejada para apartamento ou para dormitórios, o projeto deve prever a ergonomia e a circulação. Projetos sem critério técnico ignoram pontos de energia, abertura de portas e fluxo de passagem.</p>
+      
+      <p>Para quem busca móveis em São Bernardo ou em qualquer cidade do ABC, entender que o projeto faz a diferença é o primeiro passo para evitar arrependimentos futuros.</p>
+      
+      <h3>O Impacto das Cores na Produtividade e Emoção</h3>
+      
+      <p>As cores não são apenas detalhes decorativos. Elas influenciam como nos sentimos em cada ambiente:</p>
+      
+      <p><strong>Cozinha Planejada:</strong> Cores muito escuras em ambientes sem iluminação natural podem causar cansaço visual. Já o uso estratégico de contrastes facilita a percepção de limpeza e organização.</p>
+      
+      <p><strong>Quartos e Home Office:</strong> Cores vibrantes em excesso podem gerar agitação, enquanto tons muito frios podem reduzir a motivação.</p>
+      
+      <p>Um projeto de móveis planejados em Santo André ou móveis planejados em São Caetano do Sul de alto padrão sempre levará em conta a incidência de luz solar para escolher a paleta de cores ideal para o seu imóvel.</p>
+      
+      <h3>Por que investir em um projeto profissional?</h3>
+      
+      <p>Um bom planejamento analisa a rotina de quem habita o espaço. O objetivo de uma cozinha planejada eficiente, por exemplo, é reduzir o esforço físico e otimizar o tempo de preparo das refeições através do "triângulo de trabalho" (fogão, pia e geladeira).</p>
+      
+      <p>Se você preza por qualidade e quer evitar erros comuns de marcenaria, exija sempre um projeto detalhado que contemple tanto a funcionalidade técnica quanto o equilíbrio visual.</p>
+      
+      <h3>Conclusão</h3>
+      
+      <p>Na Casa11, desenvolvemos projetos personalizados que consideram todos esses aspectos, garantindo que seu ambiente seja funcional, esteticamente agradável e alinhado às suas necessidades. Entre em contato conosco e transforme seu espaço!</p>
+    `,
+    image: "/blog-post-5.jpg",
+    author: "Bruna - Arquiteta",
+    authorImage: "/bruna-arquiteta.png",
+    date: "3 de Março, 2026",
+    category: "Dicas de Decoração",
+    readTime: "4 min",
+  },
+  {
     id: 4,
     slug: "mais-que-paredes-memorias-e-pessoas",
     title: "Mais que Paredes: Memórias e Pessoas",

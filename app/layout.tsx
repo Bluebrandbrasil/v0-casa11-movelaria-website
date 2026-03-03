@@ -18,51 +18,6 @@ const openSans = Open_Sans({
   preload: true,
 })
 
-const jsonLdScript = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Casa11 Movelaria",
-  image: "https://www.casa11movelaria.com.br/banner-hero-1.webp",
-  description:
-    "Especialistas em móveis planejados em Santo André. Cozinhas, dormitórios, home office e projetos sob medida.",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Av. São Paulo, 422",
-    addressLocality: "Santo André",
-    addressRegion: "SP",
-    postalCode: "09111-410",
-    addressCountry: "BR",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: -23.6789012,
-    longitude: -46.5234567,
-  },
-  url: "https://www.casa11movelaria.com.br",
-  telephone: "+5511947901838",
-  email: "movelariacasa11@gmail.com",
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "18:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "08:00",
-      closes: "12:00",
-    },
-  ],
-  priceRange: "$$",
-  servesCuisine: "Móveis Planejados",
-  areaServed: {
-    "@type": "City",
-    name: "Santo André",
-  },
-}
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.casa11movelaria.com.br"),
   title: {
@@ -135,12 +90,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`font-sans ${workSans.variable} ${openSans.variable} antialiased`}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdScript),
-          }}
-        />
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

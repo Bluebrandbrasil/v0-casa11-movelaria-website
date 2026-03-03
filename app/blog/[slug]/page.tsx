@@ -160,37 +160,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </section>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: post.title,
-            description: post.excerpt,
-            image: post.image,
-            author: {
-              "@type": "Person",
-              name: post.author,
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Casa11 Movelaria",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://www.casa11movelaria.com.br/logo.png",
-              },
-            },
-            datePublished: post.date,
-            dateModified: post.date,
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": `https://www.casa11movelaria.com.br/blog/${post.slug}`,
-            },
-          }),
-        }}
-      />
-
       <Footer />
       <WhatsAppButton />
     </div>

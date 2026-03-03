@@ -96,35 +96,6 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Schema.org LocalBusiness structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Casa11 Movelaria",
-            description: "Especialistas em móveis planejados em Santo André",
-            url: "https://www.casa11movelaria.com.br",
-            telephone: "+5511947901838",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Av. São Paulo, 422",
-              addressLocality: "Santo André",
-              addressRegion: "SP",
-              postalCode: "09111-410",
-              addressCountry: "BR",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: "-23.6821604",
-              longitude: "-46.5448085",
-            },
-            openingHours: "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
-            priceRange: "$$",
-          }),
-        }}
-      />
     </footer>
   )
 }
