@@ -134,13 +134,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`font-sans ${workSans.variable} ${openSans.variable} antialiased`}>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLdScript),
           }}
         />
+      </head>
+      <body className={`font-sans ${workSans.variable} ${openSans.variable} antialiased`}>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
