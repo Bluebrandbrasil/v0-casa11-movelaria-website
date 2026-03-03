@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Work_Sans, Open_Sans } from "next/font/google"
-import Script from "next/script"
 import "./globals.css"
 import ClientLayout from "./ClientLayout"
 
@@ -18,51 +17,6 @@ const openSans = Open_Sans({
   display: "swap",
   preload: true,
 })
-
-const jsonLdScript = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Casa11 Movelaria",
-  image: "https://www.casa11movelaria.com.br/banner-hero-1.webp",
-  description:
-    "Especialistas em móveis planejados em Santo André. Cozinhas, dormitórios, home office e projetos sob medida.",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Av. São Paulo, 422",
-    addressLocality: "Santo André",
-    addressRegion: "SP",
-    postalCode: "09111-410",
-    addressCountry: "BR",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: -23.6789012,
-    longitude: -46.5234567,
-  },
-  url: "https://www.casa11movelaria.com.br",
-  telephone: "+5511947901838",
-  email: "movelariacasa11@gmail.com",
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "18:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "08:00",
-      closes: "12:00",
-    },
-  ],
-  priceRange: "$$",
-  servesCuisine: "Móveis Planejados",
-  areaServed: {
-    "@type": "City",
-    name: "Santo André",
-  },
-}
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.casa11movelaria.com.br"),
@@ -136,13 +90,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`font-sans ${workSans.variable} ${openSans.variable} antialiased`}>
-        <Script
-          id="json-ld"
-          type="application/ld+json"
-          strategy="afterInteractive"
-        >
-          {JSON.stringify(jsonLdScript)}
-        </Script>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
