@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Work_Sans, Open_Sans } from "next/font/google"
 import "./globals.css"
 import ClientLayout from "./ClientLayout"
+import { JsonLd } from "@/components/json-ld"
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -134,15 +135,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdScript),
-          }}
-        />
-      </head>
       <body className={`font-sans ${workSans.variable} ${openSans.variable} antialiased`}>
+        <JsonLd data={jsonLdScript} />
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
